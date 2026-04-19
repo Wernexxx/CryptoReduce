@@ -1,0 +1,74 @@
+:root {
+  --bg-dark: #000000;
+  --accent-blue: #007AFF;
+  --glass: rgba(255, 255, 255, 0.08);
+  --text-gray: #8E8E93;
+}
+
+body {
+  margin: 0; padding: 0;
+  background-color: var(--bg-dark);
+  color: white;
+  font-family: -apple-system, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Оптимизированный анимированный фон */
+.animated-bg {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(135deg, #000000, #0a1128, #001f3f, #000000);
+  background-size: 400% 400%;
+  animation: meshGradient 15s ease infinite;
+  z-index: -1;
+  transform: translateZ(0);
+}
+
+@keyframes meshGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.app-container { padding: 16px; }
+
+.header { display: flex; justify-content: center; margin-bottom: 20px; }
+.user-badge { background: var(--glass); padding: 4px 12px; border-radius: 20px; font-size: 13px; }
+
+.balance-card { text-align: center; margin: 30px 0; }
+.main-amount { font-size: 42px; font-weight: 800; margin: 0; }
+.currency-label { color: var(--text-gray); font-size: 16px; margin-top: 5px; }
+
+.actions-grid { 
+  display: grid; grid-template-columns: repeat(3, 1fr); 
+  gap: 12px; margin-bottom: 30px; 
+}
+
+.action-item {
+  background: var(--glass); backdrop-filter: blur(15px);
+  border-radius: 18px; padding: 16px 8px;
+  text-align: center; font-size: 12px; font-weight: 600;
+}
+
+.icon-box {
+  background: var(--accent-blue); width: 44px; height: 44px;
+  border-radius: 50%; display: flex; align-items: center;
+  justify-content: center; margin: 0 auto 10px; font-size: 22px;
+}
+
+.assets-section { width: 100%; }
+.section-header { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 15px; color: var(--text-gray); }
+.blue-link { color: var(--accent-blue); }
+
+.asset-row {
+  background: var(--glass); padding: 16px;
+  border-radius: 20px; display: flex; justify-content: space-between;
+  align-items: center;
+}
+
+.asset-info { display: flex; align-items: center; gap: 12px; }
+.asset-logo { font-size: 28px; }
+.asset-name { font-weight: 700; font-size: 16px; }
+.asset-price { font-size: 12px; color: var(--text-gray); }
+.up { color: #34C759; margin-left: 4px; }
+.asset-balance { text-align: right; font-weight: 600; }
+.sub-val { font-size: 12px; color: var(--text-gray); font-weight: 400; }
