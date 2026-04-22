@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CryptoReduce/static/css/main.4144f537.css",
+    "main.js": "/CryptoReduce/static/js/main.1ce37efa.js",
+    "static/js/453.af205ec6.chunk.js": "/CryptoReduce/static/js/453.af205ec6.chunk.js",
+    "index.html": "/CryptoReduce/index.html",
+    "main.4144f537.css.map": "/CryptoReduce/static/css/main.4144f537.css.map",
+    "main.1ce37efa.js.map": "/CryptoReduce/static/js/main.1ce37efa.js.map",
+    "453.af205ec6.chunk.js.map": "/CryptoReduce/static/js/453.af205ec6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4144f537.css",
+    "static/js/main.1ce37efa.js"
+  ]
+}
